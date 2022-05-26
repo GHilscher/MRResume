@@ -1,0 +1,90 @@
+.resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+      "name  photo"
+      "work  about"
+      "work  education"
+      "community  skills";
+  }
+  
+  .circle {
+    border: 1px solid black;
+    height: 150pt;
+    width: 150pt;
+    border-radius: 50%;
+  }
+  
+  .grid-area {
+    padding: 1em 1em 1em 1em;
+    border: 1px black solid;
+  }
+  
+  .name {
+    grid-area: name;
+   background-color: pink;}
+  
+  .photo {
+    grid-area: photo;
+    background-color: lavender;
+display: flex;
+align-items: center;
+
+  }
+
+.photo > div {
+    margin:auto;
+ width:150px;
+height:150px;
+text-align: center;
+ 
+  /* margin-left: 10%; */
+  /* margin-top: 7%; */
+} 
+
+.photo > div > img {
+    display: block;
+    border: solid black 1px;
+    border-radius: 50%;
+    
+}
+  
+  .about {
+    grid-area: about;
+    background-color: yellow;
+      
+  }
+  
+  .work {
+    grid-area: work;
+  }
+  
+  .skills {
+    grid-area: skills;
+  }
+  img {
+  }
+ 
+  
+  .education {
+    grid-area: education;
+  }
+  
+  .community {
+    grid-area: community;
+  }
+  
+  .wrapper {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+    
+    
+  
+  
+  
+ 
